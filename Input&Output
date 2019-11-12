@@ -1,0 +1,16 @@
+Enter first number: 1
+Enter second number: 900
+Armstrong numbers between 1 and 900 are:
+1
+153
+370
+371
+407
+________________________________
+Enter first number: 65
+Enter second number: 920
+Armstrong numbers between 65 and 920 are:
+153
+370
+371
+407
