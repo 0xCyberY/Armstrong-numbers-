@@ -1,8 +1,10 @@
 //Display the Armstrong numbers between the intervals.
 #include <iostream>
+#include<cmath>
+
 using namespace std;
 class Arms{
-	int num1, num2, i, num, digit, sum;
+	int num1, num2, i, num, digit, sum,digitcount;
 	public:
 		void fun(){
 			 cout << "Enter first number: ";
@@ -14,10 +16,16 @@ class Arms{
   {
         sum = 0;
         num = i;
+	digitcount=0;
+	 while(num>0){
+		 digitcount++;
+		 num/=10;
+	 }
+	  num=i;
         for(; num > 0; num /= 10)
         {
             digit = num % 10;
-            sum = sum + digit * digit * digit;
+            sum = sum + pow(digit,digitcount);
         }
         if(sum == i)
         {
